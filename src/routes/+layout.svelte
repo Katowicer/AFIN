@@ -1,19 +1,20 @@
 <script lang="ts">
+	import { base } from '$app/paths';
 	import '../app.css';
 	import Navbar, { NavbarRoute } from '../lib/components/ui/Navbar/Navbar.svelte';
 
 	let { children } = $props();
 	const routes: NavbarRoute[] = [
-		{ href: '/', content: 'Home' },
-		{ href: 'history', content: 'Storia' },
-		{ href: 'activity', content: 'Attività' },
-		{ href: 'finality', content: 'Finalità' },
-		{ href: 'voices', content: 'La voce dei protagonisti' },
-		{ href: 'docs', content: 'Documenti' },
-		{ href: 'news', content: 'News' },
-		{ href: 'gallery', content: 'Galleria' },
-		{ href: 'contacts', content: 'Contatti' },
-		{ href: 'donate', content: 'Per donare' }
+		{ href: base + '/', content: 'Home' },
+		{ href: base + '/history', content: 'Storia' },
+		{ href: base + '/activity', content: 'Attività' },
+		{ href: base + '/finality', content: 'Finalità' },
+		{ href: base + '/voices', content: 'La voce dei protagonisti' },
+		{ href: base + '/docs', content: 'Documenti' },
+		{ href: base + '/news', content: 'News' },
+		{ href: base + '/gallery', content: 'Galleria' },
+		{ href: base + '/contacts', content: 'Contatti' },
+		{ href: base + '/donate', content: 'Per donare' }
 	];
 </script>
 
