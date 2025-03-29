@@ -18,11 +18,11 @@
 	];
 </script>
 
-<div class="flex min-h-screen flex-col text-sm sm:text-base md:text-lg">
+<div class="flex min-h-screen flex-col text-base sm:text-base md:text-lg">
 	<Navbar {routes} />
 
 	<main
-		class="mx-auto mb-4 max-w-4/5 grow flex-col space-y-10 p-4 text-justify text-sm sm:text-base md:p-6 md:text-lg lg:max-w-5/6 lg:p-6 xl:max-w-3/4 2xl:max-w-1/2"
+		class="mx-auto mb-4 sm:max-w-4/5 grow flex-col space-y-10 p-4 text-justify text-sm sm:text-base md:p-6 md:text-lg lg:max-w-5/6 lg:p-6 xl:max-w-3/4 2xl:max-w-1/2"
 	>
 		{@render children()}
 	</main>
