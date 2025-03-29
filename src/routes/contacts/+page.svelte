@@ -50,13 +50,17 @@
 <!-- Maps -->
 <section>
 	<Card>
-		<iframe
-			title="map"
-			src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2779.044896139235!2d9.389908312032967!3d45.8504007709622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47841d300b77c249%3A0xc5f094eced398a5a!2sVia%20Azzone%20Visconti%2C%2033%2C%2023900%20Lecco%20LC%2C%20Italy!5e0!3m2!1sen!2sus!4v1740184465399!5m2!1sen!2sus"
-			width="1000"
-			height="512"
-			loading="lazy"
-			referrerpolicy="no-referrer-when-downgrade"
-		></iframe>
+		<div class="relative w-full pt-[56.25%]">
+			<iframe
+				class="absolute top-0 left-0 h-full w-full border-0"
+				title="map"
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2779.044896139235!2d9.389908312032967!3d45.8504007709622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47841d300b77c249%3A0xc5f094eced398a5a!2sVia%20Azzone%20Visconti%2C%2033%2C%2023900%20Lecco%20LC%2C%20Italy!5e0!3m2!1sen!2sus!4v1740184465399!5m2!1sen!2sus"
+				width="1000"
+				height="512"
+				allowfullscreen
+				loading="lazy"
+				referrerpolicy="no-referrer-when-downgrade"
+			></iframe>
+		</div>
 	</Card>
 </section>

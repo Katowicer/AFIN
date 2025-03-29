@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { base } from '$app/paths';
 	import '../app.css';
-	import Navbar, { NavbarRoute } from '../lib/components/ui/Navbar/Navbar.svelte';
+	import Navbar, { type NavbarRoute } from '../lib/components/ui/Navbar/Navbar.svelte';
 
 	let { children } = $props();
 	const routes: NavbarRoute[] = [
