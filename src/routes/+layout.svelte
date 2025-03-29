@@ -1,6 +1,6 @@
 <script lang="ts">
 	import '../app.css';
-	import Navbar, { type NavbarRoute } from '$lib/components/ui/Navbar/Navbar.svelte';
+	import Navbar, { NavbarRoute } from '../lib/components/ui/Navbar/Navbar.svelte';
 
 	let { children } = $props();
 	const routes: NavbarRoute[] = [
