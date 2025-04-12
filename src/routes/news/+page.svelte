@@ -1,7 +1,67 @@
-<script>
+<script lang="ts">
+	import type { PhotoSwipeEntityImage } from '$lib/components/ui/ImageGridGallery.svelte';
+	import ImageGridGallery from '$lib/components/ui/ImageGridGallery.svelte';
 	import Heading from '$lib/components/ui/Heading.svelte';
 	import Paragraph from '$lib/components/ui/Paragraph.svelte';
 	import Title from '$lib/components/ui/Title.svelte';
+
+	let imgs: PhotoSwipeEntityImage[] = [
+		{
+			src: './sidecar_fav/AFIN4.jpeg',
+			width: 1200,
+			height: 1600
+		},
+		{
+			src: './sidecar_fav/AFIN5.jpeg',
+			width: 1200,
+			height: 1600
+		},
+		{
+			src: './sidecar_fav/AFIN1.jpeg',
+			width: 1500,
+			height: 2000
+		},
+		{
+			src: './sidecar_fav/AFIN6.jpeg',
+			width: 1200,
+			height: 1600
+		},
+		{
+			src: './sidecar_fav/AFIN2.jpeg',
+			width: 1200,
+			height: 1600
+		},
+		{
+			src: './sidecar_fav/AFIN3.jpeg',
+			width: 1200,
+			height: 1600
+		},
+		{
+			src: './sidecar_fav/AFIN8.jpeg',
+			width: 1200,
+			height: 1600
+		},
+		{
+			src: './sidecar_fav/AFIN11.jpeg',
+			width: 1200,
+			height: 1600
+		},
+		{
+			src: './sidecar_fav/AFIN10.jpeg',
+			width: 1200,
+			height: 1600
+		},
+		{
+			src: './sidecar_fav/AFIN7.jpeg',
+			width: 1200,
+			height: 1600
+		},
+		{
+			src: './sidecar_fav/AFIN9.jpeg',
+			width: 1200,
+			height: 1600
+		}
+	];
 </script>
 
 <Title>Notizie</Title>
@@ -32,6 +92,8 @@
 		>Grazie a Brunello e ai suoi colleghi per averci fatto vivere ancora una volta un'esperienza
 		indimenticabile
 	</Paragraph>
+
+	<ImageGridGallery {imgs} />
 </section>
 
 <section class="rounded-lg border-t-4 border-black bg-white p-8 shadow">
